@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <title> Our Universe ❤️</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>    
+<nav class="navbar">
+    <div class="logo">Our Universe❤️</div>
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#story">Our Story</a>
+        <a href="#memories">Memories</a>
+        <a href="#letters">Love Letters</a>
+        <a href="#reasons">19 Reasons</a>
+    </div>
+</nav>
+        <section id="home" class="hero">
+            <p class="subtitle">A WORLD OF OUR OWN</p>
+            <h1> Welcome to Our Universe</h1>
+            <p class="description">
+                Somewhere between two hearts,
+                we created our own universe.
+            </p>
+            <a href="#story" class="explore-button">
+                Explore Our Story
+            </a>
+        </section>
+        <section id="story" class="section">
+            <h2> Our Story</h2>
+            <p>
+              Our story began during the autumn harvest festival. I never expected that a simple day of harvesting would turn into something so special and meaningful. That was the day I met you. You came over to me and offered to help, and little did I know that this small moment would become the beginning of our beautiful story.
+
+From that day on, things slowly started to change. We began spending more time together, sharing little moments, making memories, laughing, and getting to know each other better. What started as a simple meeting turned into something I never knew I needed. And now, here we are, spending almost every day together and creating countless memories along the way.
+
+Sometimes I think about how lucky I am that you decided to come over and help me that day. If you hadn't, who knows when or how we would have met? It's funny how the smallest moments can lead to the most beautiful things in life.
+
+I wouldn't change the way our story began because it brought me to you. And if I could go back to that autumn day, knowing everything I know now, I would still choose to meet you all over again. ❤️
+            </p>
+        <section id="memories" class="section">
+            <h2>Our Memories</h2>
+            <p>
+                Every moment matters.
+                Every memory is special.
+            </p>
+            <div class="gallery">
+                <div class="memory-card">
+                    <img src="images/memory1.jpg"
+                    alt="Our first memory">
+                    <h3> Our First Memory</h3>
+                    <p> A moment i'll always remember. </p>
+                </div>
+                 <div class="memory-card">
+                    <img src="images/memory2.jpg"
+                    alt="A beautiful memory.">
+                    <h3> Forever memory</h3>
+                    <p> Coffee and You. </p>
+                </div>
+                 <div class="memory-card">
+                    <img src="images/memory3.jpg"
+                    alt="First Movie Date">
+                    <h3> First Movie Date</h3>
+                    <p> A little moments, big feelings. </p>
+                </div>
+                 <div class="memory-card">
+                    <img src="images/memory4.jpg"
+                    alt="A special day">
+                    <h3> Special Day</h3>
+                    <p> Day that make me smile. </p>
+                </div>
+            </div>
+        </section>
+   <section class="mystery-letter" id="letters">
+    <h2>To the one who found this...</h2>
+    <p>A little secret has been waiting for you.</p>
+    <div class="envelope" onclick="openLetter()">
+        <div id="letter" class="hidden-letter">
+            <h2>My Dearest Temuujin</h2>
+            <p>No matter how hard life gets, I want you to know that you will never have to face it alone. When the whole world turns against you, I'll be the one standing beside you. When you feel weak, I'll be your strength. When you feel lost, I'll hold your hand until you find your way again.
+
+You don't have to be perfect or strong all the time. I love you through every version of yourself, even the ones you struggle to love.
+
+Through every high and every low, it's you and me. I promise to keep choosing you, always. ❤️</p>
+        </div>
+       <div class="envelope-pocket"></div>
+<div class="flap"></div>
+<div class="wax-seal">♥</div>
+    </div>
+</section>
+<section class="reasons-section" id="reasons">
+    <div class="reasons-heading">
+        <p class="small-heading">A LITTLE COLLECTION OF LOVE</p>
+        <h2>19 Reasons Why I Love You</h2>
+        <p>Little pieces of my heart, just for you.</p>
+    </div>
+    <div class="reasons-counter">
+        <span id="openedCount">0</span> / 19 reasons discovered ♥
+    </div>
+    <div class="reasons-grid" id="reasonsGrid">
+    </div>
+    <div class="reason-overlay" id="reasonOverlay">
+        <div class="reason-paper">
+            <button class="close-reason" onclick="closeReason()"
+                aria-label="Close letter">&times;</button>
+            <p class="paper-label">A REASON FROM MY HEART</p>
+            <h3 id="reasonNumber">Reason No. 1</h3>
+            <div class="paper-heart">♥</div>
+            <p id="reasonText"></p>
+            <p class="paper-signature">With all my love ♡</p>
+            <button class="next-reason" onclick="nextReason()">
+                Read another reason ♥
+            </button>
+        </div>
+    </div>
+</section>
+        <footer>
+            Made with love ❤️
+        </footer>
+        <div id="photo-preview" class="photo-preview">
+            <span id="close-preview">&times;</span>
+            <img id="preview-image" src="" alt="Expanded memory">
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
